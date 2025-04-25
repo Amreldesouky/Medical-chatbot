@@ -4,10 +4,11 @@ import google.genai as genai
 from google.genai import types
 
 # Ensure the API key is set in the environment variables
-os.environ["GEMINI_API_KEY"] = ""  # Set your API key here
+# Fetch API key from Streamlit secrets
+api_key = st.secrets["GEMINI_API_KEY"]
 
 # Initialize the client with the API key
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))  # Get the API key from the environment variable
+client = genai.Client(api_key=api_key)
 
 # Model ID
 model = "gemini-2.5-flash-preview-04-17"
