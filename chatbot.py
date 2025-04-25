@@ -7,7 +7,7 @@ from google.generativeai import types
 
 # Ensure the API key is set in the environment variables
 # Fetch API key from Streamlit secrets
-api_key = st.secrets["GEMINI_API_KEY"]
+api_key = st.secrets["gemini_api_key"]
 
 # Initialize the client with the API key
 client = genai.Client(api_key=api_key)
