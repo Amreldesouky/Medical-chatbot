@@ -1,7 +1,9 @@
 import streamlit as st
 import os
-import google.genai as genai
-from google.genai import types
+import google.generativeai as genai
+from google.generativeai import types
+
+# Ensure the API key is set in the environment variables
 
 # Ensure the API key is set in the environment variables
 # Fetch API key from Streamlit secrets
