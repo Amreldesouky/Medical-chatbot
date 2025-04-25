@@ -13,7 +13,7 @@ api_key = st.secrets["gemini_api_key"]
 client = genai.Client(api_key=api_key)
 
 # Model ID
-model = "gemini-2.5-flash-preview-04-17"
+model = "gemini-1.5-flash"
 
 # Initialize conversation history in session state
 if 'conversation_history' not in st.session_state:
