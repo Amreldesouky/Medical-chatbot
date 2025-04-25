@@ -1,5 +1,2 @@
-streamlit==1.14.0
-rich>=10.14.0
-markdown-it-py>=2.2.0
-pygments<3.0.0,>=2.13.0
-mdurl~=0.1
+streamlit
+google-cloud-genai
