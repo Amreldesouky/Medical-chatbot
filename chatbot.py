@@ -8,8 +8,8 @@ api_key = st.secrets["gemini_api_key"]
 genai.configure(api_key=api_key)
 
 # Model ID (use a supported model; gemini-1.5-flash is generally available)
-model_name = "gemini-1.5-flash"
-
+model_name = "gemini-2.5-flash-preview-04-17"
+#gemini-1.5-flash
 # Initialize conversation history in session state
 if "conversation_history" not in st.session_state:
     st.session_state.conversation_history = []
